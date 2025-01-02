@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>Your To-Dos</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Task</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% todos.forEach(todo=> { %>
+                <tr>
+                    <td>
+                        <%= todo.id %>
+                    </td>
+                    <td>
+                        <%= todo.task %>
+                    </td>
+                </tr>
+                <% }); %>
+        </tbody>
+    </table>
+</body>
+
+</html>
